@@ -35,7 +35,7 @@ target_compile_definitions(project_paths INTERFACE
 
 add_library(${PROJECT_NAME} STATIC
         src/data_structure.cpp
-        include/data_structure.hpp include/Node.hpp)
+        include/data_structure.hpp src/Node.cpp include/ImplicitTreap.hpp src/ImplicitTreap.cpp src/Treap.cpp include/Treap.hpp include/Rope.hpp src/Rope.cpp)
 
 # включить предупреждения компилятора для библиотеки (линковка)
 target_link_libraries(${PROJECT_NAME} PRIVATE project_warnings)
